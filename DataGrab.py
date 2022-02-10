@@ -4,16 +4,12 @@
 #X=Category of item, Y=first letter of item, Z=Page Number
 #12142 = summing pot 3
 import datetime
-
-
-def formatEpoch(EpochDataGrabbed):
-    stringLen = 13
-
+import requests
 
 #since all data is in Epoch/Unix time, convert to datetime
 epoch_time = 1644451200000
 epoch_time_formatted = epoch_time / 1000
 date_time = datetime.datetime.fromtimestamp(epoch_time_formatted)
-print("Epoch Time:", epoch_time)
-print("real time: ", date_time)
+#print("Epoch Time:", epoch_time)
+#print("real time: ", date_time)
 
